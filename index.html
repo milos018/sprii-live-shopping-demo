@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite App</title>
+    <style>
+      .elisa-shows-gallery-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello to Sprii live shopping</h1>
+    </div>
+
+    <div class="elisa-shows-gallery-wrapper">
+      <div data-elisa-statuses="live" class="elisa-shows-gallery">
+        <div style="display: none" class="elisa-shows-gallery-has-data">
+          <h3>We are Live</h3>
+          <p>Here is the text above the live show when a show is active</p>
+        </div>
+      </div>
+      <div
+        data-elisa-page-size="4"
+        data-elisa-show-expired="true"
+        data-elisa-statuses="vod"
+        class="elisa-shows-gallery"
+      >
+        <div style="display: none" class="elisa-shows-gallery-has-data">
+          <h3>Watch past shows</h3>
+          <p>Here you can watch our past shows</p>
+        </div>
+      </div>
+      <div
+        data-elisa-page-size="4"
+        data-elisa-show-expired="true"
+        data-elisa-statuses="planned"
+        class="elisa-shows-gallery"
+      >
+        <div style="display: none" class="elisa-shows-gallery-has-data">
+          <h3>Planned shows</h3>
+          <p>
+            Want to be prepared for our next shows? Here is a list of our
+            planned shows
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://widget.cdn.sprii.io/widget-286826844513595.js"
+      type="module"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="main.js" defer></script>
+  </body>
+</html>
