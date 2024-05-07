@@ -1,1 +1,1 @@
-console.log(window.Elisa);
+console.log(window.Elisa.widgetSettings);
